@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/dna/!svn/ver/163/trunk/include
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/dna/!svn/ver/163/trunk/include/changelog
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/dna/!svn/ver/4/trunk/include/.htaccess
+END
+error.html
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/dna/!svn/ver/136/trunk/include/error.html
+END
+mkchangeloghtml.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/dna/!svn/ver/33/trunk/include/mkchangeloghtml.sh
+END

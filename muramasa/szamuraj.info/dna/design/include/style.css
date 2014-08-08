@@ -1,0 +1,33 @@
+BODY { background-color: #000000; color: #CAB676; }
+
+BODY,TABLE,INPUT,SELECT { font-family: arial, helvetica, sans-serif; font-size: 11px; }
+TEXTAREA { font-size: 11px; }
+TH { font-weight: bold; }
+
+.small { font-size: 10px; }
+.large { font-size: 14px; }
+
+A { color: #FFCC00; }
+A:visited { color: #FFCC00; }
+A.danger:visited { color: #FF0000; }
+A:hover { color: #FFFFFF; }
+
+A.menu { color: #000000; text-decoration: none; }
+A.menu:visited { color: #000000; }
+A.menu:hover { color: #FFFFFF; }
+
+.result { color: #FF4444; }
+.output { color: #8888FF; }
+
+.data { background-color: #222222; }
+.menu { background-color: #CAB676; color: #000000; font-weight: bold; text-align: center; }
+
+H1 { font-size: 18px; font-weight: bold; margin-top: 6px; margin-bottom: 18px; }
+H2 { font-size: 16px; font-weight: bold; margin-top: 4px; margin-bottom: 11px; }
+H3 { font-size: 14px; font-weight: bold; margin-top: 2px; margin-bottom: 6px; }
+
+.danger { color: #FF0000; }
+.warning { color: #FFFF00; }
+.good { color: #00FF00; }
+
+.lined { border: 1px solid #CAB676; }

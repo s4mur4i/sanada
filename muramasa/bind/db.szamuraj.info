@@ -1,0 +1,56 @@
+;
+; Bind zone file
+; Generator: Domain Name Administrator 1.7.2
+; https://szamuraj.ath.cx:443/dna/download.phtml/domain/normal/szamuraj.info
+;
+$TTL 7200
+szamuraj.info. IN SOA ns1.szamuraj.info. admin.szamuraj.com. (
+                            2012082222 ; Serial
+                            3600 ; Refresh
+                            1000 ; Retry
+                            604800 ; Expire
+                            7200 ) ; Negative Cache TTL
+
+;
+; Static text from administrator:
+;
+
+@ IN A    10.10.16.36
+@   IN NS   ns1.szamuraj.info.
+@   IN MX 5 mail
+ns1.szamuraj.info.  IN A    10.10.16.36
+
+;
+; CNAMEs from database
+;
+
+db	IN CNAME	muramasa	
+ntp	IN CNAME	ricardo	
+torrent	IN CNAME	ricardo	
+zene	IN CNAME	ricardo	
+bugzilla	IN CNAME	svn	
+dot	IN CNAME	web	
+itop	IN CNAME	web	
+lime	IN CNAME	web	
+pier	IN CNAME	web	
+redmine	IN CNAME	web	
+wiki	IN CNAME	web	
+
+;
+; Computers:
+;
+
+hochenheim	IN A	10.10.16.35 ; A/1234 X Y CCCCCCCCCCCD
+ldap	IN A	10.10.16.38 ; A/1234 X Y acde4880731c
+maenza	IN A	10.10.16.1 ; A/1234 X Y C0C1C03CA82E
+mail	IN A	10.10.16.34 ; A/1234 X Y acde4800a899
+muramasa	IN A	10.10.16.36 ; A/1234 X Y D85D4C811589
+nagios	IN A	10.10.16.33 ; A/1234 X Y acde48d14939
+popcorn	IN A	10.10.16.9 ; A/1234 X Y 0006DC422F2B
+puppet	IN A	10.10.16.41 ; A/1234 X Y acde4828368b
+ricardo	IN A	10.10.16.30 ; A/1234 X Y D85D4C80973B
+shogun	IN A	10.10.16.2 ; A/1234 X Y 74EA3ADB2500
+svn	IN A	10.10.16.39 ; A/1234 X Y acde48822ff6
+test	IN A	10.10.16.31 ; A/1234 X Y acde482103ee
+test2	IN A	10.10.16.32 ; A/1234 X Y acde4869ddd3
+web	IN A	10.10.16.40 ; A/1234 X Y acde48a1b28e

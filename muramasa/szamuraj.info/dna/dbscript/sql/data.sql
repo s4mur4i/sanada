@@ -1,0 +1,63 @@
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE="NO_AUTO_VALUE_ON_ZERO" */;
+
+INSERT INTO `rights` VALUES ('NOLOGIN','TILTÁS: Interaktiv belépés');
+INSERT INTO `rights` VALUES ('USERADMIN','Felhasználó adminolás');
+INSERT INTO `rights` VALUES ('TECHEXPORT','Exportolás - technikai adatok');
+INSERT INTO `rights` VALUES ('USEREXPORT','Exportolás - személyes adatok');
+INSERT INTO `rights` VALUES ('DOMAINADMIN','Domain módosítás');
+INSERT INTO `rights` VALUES ('COMPUTERADMIN','Számítógép módosítás');
+INSERT INTO `rights` VALUES ('NEWSLETTERADMIN','Hírlevélküldés');
+INSERT INTO `rights` VALUES ('READ','Olvasás (domainek,gépek,rendszergazdák)');
+
+insert into variables set
+	Name='NEXT_TERMINATION_DATE'
+	,Value=FROM_UNIXTIME(UNIX_TIMESTAMP()+15*24*60*60)
+	,Descr='Alapértelmezett lejárati dátum ("ÉÉ-HH-NN ÓÓ:PP:MM")'
+;
+insert into variables set
+	Name='NEXT_GRACE_DATE'
+	,Value=FROM_UNIXTIME(UNIX_TIMESTAMP()+30*24*60*60)
+	,Descr='Alapértelmezett haladékos lejárati dátum ("ÉÉ-HH-NN ÓÓ:PP:MM")'
+;
+insert into variables set
+	Name='DEFAULT_BAN_INTERVAL'
+	,Value=7*24*60*60
+	,Descr='Alapértelmezett kitiltási idő (másodperc)'
+;
+insert into variables set
+	Name='DEFAULT_LIMIT_INTERVAL'
+	,Value=7*24*60*60
+	,Descr='Alapértelmezett korlátozási idő (másodperc)'
+;
+insert into variables set
+	Name='EMAIL_SIMULATE_ONLY'
+	,Value="true"
+	,Descr='Ha az értéke "true", akkor E-mail küldések nem történnek meg.'
+;
+
+INSERT INTO `users` VALUES (
+	NULL
+	,'s4mur4i'
+	,old_password('alfa8537')
+	,UNIX_TIMESTAMP() 
+	,0
+	,0
+	,0
+	,0
+	,'admin@szamuraj.com'
+	,'System Administrator'
+	,'USERADMIN'
+);
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

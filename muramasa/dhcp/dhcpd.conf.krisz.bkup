@@ -1,0 +1,26 @@
+ddns-update-style none;
+option domain-name "szamuraj.info";
+option domain-name-servers 10.10.16.36;
+option routers 10.10.16.1;
+default-lease-time 600;
+max-lease-time 7200;
+authoritative;
+log-facility local7;
+class "kvm" {
+	            match if binary-to-ascii(16,8,":",substring(hardware, 0, 3)) = "1:AC:DE:48";
+}
+subnet 10.10.16.0 netmask 255.255.255.0 {
+	        pool {
+				            range 10.10.16.5 10.10.16.29;
+							        allow unknown-clients;
+									        deny members of "kvm";
+											        }
+}
+#host hostname  {
+#      hardware ethernet xxxx;
+#      fixed-address xxxxx;
+#}
+host debian {
+	        hardware ethernet AC:DE:48:4a:88:f0;
+			        fixed-address 10.10.16.40;
+}

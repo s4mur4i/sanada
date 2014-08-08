@@ -1,0 +1,5 @@
+<?
+	define("DB_USER","dna");
+	define("DB_PASS","");
+	define("DB_NAME","dna");
+?>

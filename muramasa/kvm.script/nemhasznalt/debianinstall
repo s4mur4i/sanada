@@ -1,0 +1,26 @@
+virt-install \
+-n nev \
+--description  leiras \
+-r Memoria \
+--vcpus procik \
+-l helyszin \
+--os-type=linux \
+--os-variant=debiansqueeze\
+--disk lvm utvonal \
+--network bridge=br0,model=virtio,mac=macszam \
+--nographics \
+--noautoconsole \
+--autostart \
+-x "console=ttyS0,115200n8"
+
+### Centos install console
+virt-install -n centos -r 512 --vcpus 1 -l http://ftp.freepark.org/pub/linux/distributions/centos/6.1/os/x86_64/ --os-type=linux --os-variant=generic26 --disk /dev/mapper/muramasa-vg_centos --network bridge=br0,model=virtio --nographics -v -x "console=ttyS0"
+
+debian 
+http://ftp.hu.debian.org/debian/dists/squeeze/main/installer-amd64/
+centos ?
+http://ftp.freepark.org/pub/linux/distributions/centos/6.1/os/x86_64/
+fedora ?
+http://ftp.udl.es/pub/fedora/linux/releases/10/Fedora/i386/os/
+suse ?
+http://download.opensuse.org/distribution/11.0/repo/oss/

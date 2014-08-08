@@ -1,0 +1,19 @@
+<VirtualHost *:80>
+	ServerAdmin s4mur4i@szamuraj.info
+	ServerName ldap.szamuraj.info
+	DocumentRoot /usr/share/phpldapadmin
+
+	<Directory />
+		Options +FollowSymLinks
+		AllowOverride None
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>

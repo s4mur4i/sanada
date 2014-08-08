@@ -1,0 +1,139 @@
+#NameVirtualHost *:443
+SSLStrictSNIVHostCheck off
+<IfModule mod_gnutls.c>
+<VirtualHost *:443>
+	ServerAdmin s4mur4i@szamuraj.ath.cx
+	ServerName szamuraj.ath.cx:443
+	ServerAlias *.szamuraj.ath.cx
+	DocumentRoot /var/www/szamuraj.ath.cx
+	<Directory /var/www/szamuraj.ath.cx>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride None
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+	<Directory "/usr/lib/cgi-bin">
+		AllowOverride None
+		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+		Order allow,deny
+		Allow from all
+	</Directory>
+	ErrorLog /var/log/apache2/szamuraj.ath.cx.error.log
+	LogLevel warn
+	CustomLog /var/log/apache2/szamuraj.ath.cx.access.log combined
+	DirectoryIndex index.html index.php
+	SSLEngine on
+	SSLCipherSuite HIGH:MEDIUM
+	SSLProtocol all -SSLv2
+	SSLCertificateFile /etc/apache2/ssl/szamuraj.ath.cx.crt
+	SSLCertificateKeyFile /etc/apache2/ssl/szamuraj.ath.cx.key
+
+    <Directory /usr/lib/cgi-bin>
+        SSLOptions +StdEnvVars
+    </Directory>
+
+    BrowserMatch "MSIE [2-6]" \
+        nokeepalive ssl-unclean-shutdown \
+        downgrade-1.0 force-response-1.0
+    BrowserMatch "MSIE [17-9]" ssl-unclean-shutdown
+</VirtualHost>
+<VirtualHost *:443>
+	ServerAdmin s4mur4i@szamuraj.ath.cx
+	ServerName szamuraj.info
+	ServerAlias *.szamuraj.info
+	ServerAlias muramasa.szamuraj.info
+	DocumentRoot /var/www/szamuraj.info
+	<Directory /var/www/szamuraj.info>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride None
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+	<Directory "/usr/lib/cgi-bin">
+		AllowOverride None
+		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+		Order allow,deny
+		Allow from all
+	</Directory>
+	ErrorLog /var/log/apache2/szamuraj.info.error.log
+	LogLevel warn
+	CustomLog /var/log/apache2/szamuraj.info.access.log combined
+    Alias /doc/ "/usr/share/doc/"
+    <Directory "/usr/share/doc/">
+        Options Indexes MultiViews FollowSymLinks
+        AllowOverride None
+        Order deny,allow
+        Deny from all
+        Allow from 127.0.0.0/255.0.0.0 ::1/128 10.10.16.0/24
+    </Directory>
+	DirectoryIndex index.html index.php
+	SSLEngine on
+ 	SSLCipherSuite HIGH:MEDIUM
+    SSLProtocol all -SSLv2
+    SSLCertificateFile /etc/apache2/ssl/szamuraj.info.crt
+    SSLCertificateKeyFile /etc/apache2/ssl/szamuraj.info.key
+    <Directory /usr/lib/cgi-bin>
+        SSLOptions +StdEnvVars
+    </Directory>
+
+    BrowserMatch "MSIE [2-6]" \
+        nokeepalive ssl-unclean-shutdown \
+        downgrade-1.0 force-response-1.0
+    BrowserMatch "MSIE [17-9]" ssl-unclean-shutdown
+</VirtualHost>
+<VirtualHost *:443>
+    ServerAdmin s4mur4i@szamuraj.com
+    ServerName szamuraj.com
+    ServerAlias *.szamuraj.com
+    DocumentRoot /var/www/szamuraj.com
+    <Directory /var/www/szamuraj.com>
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride None
+        Order allow,deny
+        allow from all
+    </Directory>
+
+    ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+    <Directory "/usr/lib/cgi-bin">
+        AllowOverride None
+        Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+        Order allow,deny
+        Allow from all
+    </Directory>
+    ErrorLog /var/log/apache2/szamuraj.com.error.log
+    LogLevel warn
+    CustomLog /var/log/apache2/szamuraj.com.access.log combined
+    DirectoryIndex index.html index.php
+    SSLEngine on
+    SSLCipherSuite HIGH:MEDIUM
+    SSLProtocol all -SSLv2
+    SSLCertificateFile /etc/apache2/ssl/szamuraj.com.crt
+    SSLCertificateKeyFile /etc/apache2/ssl/szamuraj.com.key
+    <Directory /usr/lib/cgi-bin>
+        SSLOptions +StdEnvVars
+    </Directory>
+
+    BrowserMatch "MSIE [2-6]" \
+        nokeepalive ssl-unclean-shutdown \
+        downgrade-1.0 force-response-1.0
+    BrowserMatch "MSIE [17-9]" ssl-unclean-shutdown
+</VirtualHost>
+<VirtualHost *:443>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName puppet.szamuraj.ath.cx
+    ProxyPass / https://puppet.szamuraj.info/
+    ProxyPassReverse / https://puppet.szamuraj.info/
+    ProxyPreserveHost On
+	ProxyRequests Off
+	SSLProxyEngine On
+	SSLEngine On
+	SSLCertificateFile /etc/apache2/ssl/szamuraj.info.crt
+	SSLCertificateKeyFile /etc/apache2/ssl/szamuraj.info.key
+
+</VirtualHost>
+
+</IfModule>

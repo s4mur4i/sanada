@@ -1,0 +1,8 @@
+2012.01.12. 10:52:12 : DATABASE ERROR: CreateComputer: doing: Unknown column 'ModifyD' in 'field list' --- q=insert into computers set IPDomainID=3,IPEnd='1',NameDomainID=2,NameBegin='maenza',HWAddr='001122334455',RootID=1,Building='X',Room='545',CreateD=1326361932,ModifyD=1326361932,ValidUntilD=0,AccessClass=1,IsOfficial=0;
+2012.01.12. 10:53:11 : DATABASE ERROR: CreateComputer: doing: Unknown column 'ModifyD' in 'field list' --- q=insert into computers set IPDomainID=3,IPEnd='1',NameDomainID=2,NameBegin='maenza',HWAddr='001122334455',RootID=1,Building='X',Room='545',CreateD=1326361991,ModifyD=1326361991,ValidUntilD=0,AccessClass=1,IsOfficial=0;
+2012.01.12. 10:57:04 : PHP script error: Level  E_NOTICE: /var/www/szamuraj.ath.cx/dna/download.phtml (78): Undefined variable: domaintext
+2012.01.12. 11:13:13 : PHP script error: Level  E_NOTICE: /var/www/szamuraj.ath.cx/dna/main/domainadmin.php (75): Undefined variable: force
+2012.01.12. 11:23:28 : PHP script error: Level  E_NOTICE: /var/www/szamuraj.ath.cx/dna/design/engine/download_dhcpd.php (7): Trying to get property of non-object
+2012.05.10. 20:46:15 : PHP script error: Level  E_NOTICE: /var/www/szamuraj.info/dna/download.phtml (41): Undefined variable: domaintype
+2012.05.10. 20:47:14 : PHP script error: Level  E_NOTICE: /var/www/szamuraj.info/dna/download.phtml (41): Undefined variable: domaintype
+2012.05.10. 20:47:18 : PHP script error: Level  E_NOTICE: /var/www/szamuraj.info/dna/download.phtml (41): Undefined variable: domaintype

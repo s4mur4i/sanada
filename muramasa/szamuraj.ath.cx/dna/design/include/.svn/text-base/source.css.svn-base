@@ -1,0 +1,42 @@
+.keyword {
+	color: white;
+	font-weight: bold;
+}
+.number {
+	color: #FF8888;
+}
+.comment {
+	color: #888888;
+	font-style: italic;
+}
+.type {
+	color: lightblue;
+}
+.preproc {
+	color: #00FF00;
+}
+.normal {
+	color: #AAAAAA;
+}
+.symbol {
+	color: #FFCC00;
+}
+.cbracket {
+	 color: #FFFFFF;
+}
+
+.date {
+	color: #FFCC00;
+}
+.name {
+	color: #FFCC88;
+}
+.string {
+	color: #FFCC00;
+}
+.file {
+	color: #888888;
+}
+.function {
+	color: #CAB676;
+}

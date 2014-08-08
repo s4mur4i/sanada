@@ -1,0 +1,264 @@
+#NameVirtualHost *:80
+<VirtualHost *:80>
+	ServerAdmin s4mur4i@szamuraj.ath.cx
+	ServerName szamuraj.ath.cx
+	#ServerAlias *.szamuraj.ath.cx
+	DocumentRoot /var/www/szamuraj.ath.cx
+	<Directory /var/www/szamuraj.ath.cx>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride None
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+	<Directory "/usr/lib/cgi-bin">
+		AllowOverride None
+		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+		Order allow,deny
+		Allow from all
+	</Directory>
+	ErrorLog /var/log/apache2/szamuraj.ath.cx.error.log
+	LogLevel warn
+	CustomLog /var/log/apache2/szamuraj.ath.cx.access.log combined
+	DirectoryIndex index.html index.php
+</VirtualHost>
+
+<VirtualHost *:80>
+	ServerAdmin s4mur4i@szamuraj.ath.cx
+	ServerName szamuraj.info
+	#ServerAlias *.szamuraj.info
+	ServerAlias muramasa.szamuraj.info
+	DocumentRoot /var/www/szamuraj.info
+	<Directory /var/www/szamuraj.info>
+		Options +Indexes +SymlinksIfOwnerMatch
+		IndexOptions NameWidth=* +SuppressDescription
+		AllowOverride None
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+	<Directory "/usr/lib/cgi-bin">
+		AllowOverride None
+		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+		Order allow,deny
+		Allow from all
+	</Directory>
+	ErrorLog /var/log/apache2/szamuraj.info.error.log
+	LogLevel warn
+	CustomLog /var/log/apache2/szamuraj.info.access.log combined
+    Alias /doc/ "/usr/share/doc/"
+    <Directory "/usr/share/doc/">
+        Options Indexes MultiViews FollowSymLinks
+        AllowOverride None
+        Order deny,allow
+        Deny from all
+        Allow from 127.0.0.0/255.0.0.0 ::1/128 10.10.16.0/24
+    </Directory>
+	DirectoryIndex index.html index.php
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName szamuraj.com
+    #ServerAlias *.szamuraj.com
+    DocumentRoot /var/www/szamuraj.com
+    <Directory /var/www/szamuraj.com>
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride None
+        Order allow,deny
+        allow from all
+    </Directory>
+
+    ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+    <Directory "/usr/lib/cgi-bin">
+        AllowOverride None
+        Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+        Order allow,deny
+        Allow from all
+    </Directory>
+    ErrorLog /var/log/apache2/szamuraj.com.error.log
+    LogLevel warn
+    CustomLog /var/log/apache2/szamuraj.com.access.log combined
+    DirectoryIndex index.html index.php
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName dev.is-a-geek.com
+    #ServerAlias *.szamuraj.com
+    DocumentRoot /var/www/dev.is-a-geek.com
+    <Directory /var/www/dev.is-a-geek.com>
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride None
+        Order allow,deny
+        allow from all
+    </Directory>
+
+    ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+    <Directory "/usr/lib/cgi-bin">
+        AllowOverride None
+        Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+        Order allow,deny
+        Allow from all
+    </Directory>
+    ErrorLog /var/log/apache2/geek.log
+    LogLevel warn
+    CustomLog /var/log/apache2/geek.log combined
+    DirectoryIndex index.html index.php
+</VirtualHost>
+
+<VirtualHost *:80>
+	ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName nagios.szamuraj.ath.cx
+	ProxyPass / http://nagios.szamuraj.info/
+	ProxyPassReverse / http://nagios.szamuraj.info/
+	ProxyPreserveHost On
+</VirtualHost>
+## Nem mukodik, meg ki kell reszelni.
+#<VirtualHost *:80>
+#    ServerAdmin s4mur4i@szamuraj.ath.cx
+#    ServerName nagvis.szamuraj.ath.cx
+#    ProxyPass / http://nagios.szamuraj.info/
+#    ProxyPassReverse / http://nagios.szamuraj.info/
+#    ProxyPreserveHost On
+#</VirtualHost>
+
+
+<VirtualHost *:80>
+	ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName mail.szamuraj.ath.cx
+	ProxyPass / http://mail.szamuraj.info/
+	ProxyPassReverse / http://mail.szamuraj.info/
+	ProxyPreserveHost On
+</VirtualHost>
+
+<VirtualHost *:80>
+	ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName ldap.szamuraj.ath.cx
+	ProxyPass / http://ldap.szamuraj.info/
+	ProxyPassReverse / http://ldap.szamuraj.info/
+	ProxyPreserveHost On
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName maenza.szamuraj.ath.cx
+    ProxyPass / http://maenza.szamuraj.info/
+    ProxyPassReverse / http://maenza.szamuraj.info/
+    ProxyPreserveHost On
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName apache.szamuraj.ath.cx
+    ProxyPass / http://apache.szamuraj.info/
+    ProxyPassReverse / http://apache.szamuraj.info/
+    ProxyPreserveHost On
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName svn.szamuraj.ath.cx
+    ProxyPass / http://svn.szamuraj.info/
+#    ProxyPassReverse / http://svn.szamuraj.info/
+    ProxyPreserveHost On
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName bugzilla.szamuraj.ath.cx
+    ProxyPass / http://bugzilla.szamuraj.info/
+    ProxyPassReverse / http://bugzilla.szamuraj.info/
+    ProxyPreserveHost On
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName wiki.szamuraj.ath.cx
+    ProxyPass / http://wiki.szamuraj.info/
+    ProxyPassReverse / http://wiki.szamuraj.info/
+    ProxyPreserveHost Off
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName redmine.szamuraj.ath.cx
+    ProxyPass / http://redmine.szamuraj.info/
+    ProxyPassReverse / http://redmine.szamuraj.info/
+    ProxyPreserveHost Off
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName pier.szamuraj.ath.cx
+    ProxyPass / http://pier.szamuraj.info/
+    ProxyPassReverse / http://pier.szamuraj.info/
+    ProxyPreserveHost Off
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName puppet.szamuraj.ath.cx
+    ProxyPass / http://puppet.szamuraj.info/
+    ProxyPassReverse / http://puppet.szamuraj.info/
+    ProxyPreserveHost Off
+#    AuthBasicProvider ldap
+#    AuthType Basic
+#    AuthzLDAPAuthoritative on
+#    AuthName "Subversion Repository Web Browsing"
+#    AuthLDAPURL "ldap://ldap.szamuraj.info/ou=People,dc=szamuraj,dc=info?userid?sub?(objectClass=*)" NONE
+#    AuthLDAPBindDN "cn=proxyuser,ou=People,dc=szamuraj,dc=info"
+#    AuthLDAPBindPassword QHzgy1hm
+#    Require valid-user
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName kep.szamuraj.ath.cx
+    ProxyPass / http://ricardo.szamuraj.info/
+#    ProxyPassReverse / http://ricardo.szamuraj.info/
+    ProxyPreserveHost On
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName zene.szamuraj.ath.cx
+    ProxyPass / http://zene.szamuraj.info/
+#    ProxyPassReverse / http://zene.szamuraj.info/
+    ProxyPreserveHost On
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName torrent.szamuraj.ath.cx
+    ProxyPass / http://torrent.szamuraj.info/
+#    ProxyPassReverse / http://zene.szamuraj.info/
+    ProxyPreserveHost On
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName itop.szamuraj.ath.cx
+    ProxyPass / http://itop.szamuraj.info/
+#    ProxyPassReverse / http://zene.szamuraj.info/
+    ProxyPreserveHost On
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName ocs.szamuraj.ath.cx
+    ProxyPass / http://web.szamuraj.info/ocsreports/
+#    ProxyPassReverse / http://zene.szamuraj.info/
+    ProxyPreserveHost On
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin s4mur4i@szamuraj.ath.cx
+    ServerName lime.szamuraj.ath.cx
+    ProxyPass / http://lime.szamuraj.info/
+#    ProxyPassReverse / http://zene.szamuraj.info/
+    ProxyPreserveHost On
+</VirtualHost>
+

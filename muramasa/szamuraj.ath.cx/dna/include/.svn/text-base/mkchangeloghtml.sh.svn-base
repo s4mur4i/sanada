@@ -1,0 +1,2 @@
+#!/bin/sh
+source-highlight changelog -s changelog -t 4 -c design/include/source.css --no-doc -f html

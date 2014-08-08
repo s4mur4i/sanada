@@ -1,0 +1,26 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "szamuraj.ath.cx" {
+	type master;
+	file "/etc/bind/db.szamuraj.ath.cx";
+	allow-update { none; }; 
+};
+
+zone "szamuraj.info" {
+	type master;
+	file "/etc/bind/db.szamuraj.info";
+	allow-update { none; }; 
+};
+
+zone "16.10.10.in-addr.arpa" {
+	    type master;
+	    file "/etc/bind/16.10.10.in-addr.arpa";
+		allow-update { none; }; 
+};
+

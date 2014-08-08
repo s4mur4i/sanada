@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/dna/!svn/ver/161/trunk/dbscript/upgrade-1.5.0-1.6.0
+END
+computers.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/dna/!svn/ver/36/trunk/dbscript/upgrade-1.5.0-1.6.0/computers.sql
+END
+variables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/dna/!svn/ver/161/trunk/dbscript/upgrade-1.5.0-1.6.0/variables.sql
+END

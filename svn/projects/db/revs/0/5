@@ -1,0 +1,31 @@
+PLAIN
+K 3
+c++
+V 18
+dir 2-3.0.r3/14318
+K 5
+infra
+V 18
+dir 3-3.0.r3/14069
+K 3
+kvm
+V 16
+dir 9-3.0.r4/948
+K 4
+perl
+V 18
+dir u-3.0.r3/14252
+END
+ENDREP
+id: 0.0.r5/146
+type: dir
+pred: 0.0.r4/1259
+count: 5
+text: 5 0 133 133 b697686405f4c8b8d26da2538c17ec03
+cpath: /
+copyroot: 0 /
+
+1-3.0.r3/14189 delete-dir false false /c
+
+
+146 273

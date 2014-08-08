@@ -1,0 +1,14 @@
+szamuraj.info.      IN      SOA     ns1.szamuraj.info. admin.szamuraj.com. (
+                                                        2012011003;
+                                                        8H;
+                                                        2H;
+                                                        1D;
+                                                        4H;
+						 								)
+
+szamuraj.info.      IN      NS              ns1.szamuraj.info.
+szamuraj.info.      IN      MX     10       mail.szamuraj.info.
+				IN 		A		10.10.16.36
+ns1             IN      A       10.10.16.36
+mail             IN      A       10.10.16.36
+* 				IN		A		10.10.16.36

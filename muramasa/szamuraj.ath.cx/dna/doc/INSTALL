@@ -1,0 +1,13 @@
+DEPENDENCY:
+php4/5, mysql4/5, lynx, source-highlight
+
+php.ini:
+register_globals = 1
+zend.ze1_compatibility_mode = On
+
+apache.conf, httpd.conf, anyhing:
+#AddDefaultCharset # (Do not addd default character set!!!)
+
+run dbscript/sturct.sql
+
+run include/mkchangeloghtml.sh

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/dna/!svn/ver/70/trunk/doc
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/dna/!svn/ver/70/trunk/doc/INSTALL
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/dna/!svn/ver/67/trunk/doc/.htaccess
+END

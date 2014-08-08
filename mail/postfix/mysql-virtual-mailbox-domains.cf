@@ -1,0 +1,5 @@
+user = mail
+password = Q1w2e3r4
+hosts = db.szamuraj.info
+dbname = mail
+query = SELECT 1 FROM virtual_domains WHERE name='%s'

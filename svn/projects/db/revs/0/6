@@ -1,0 +1,109 @@
+id: 4-6.0.r6/0
+type: dir
+count: 0
+cpath: /android/trunk
+copyroot: 0 /
+
+id: 2-6.0.r6/71
+type: dir
+count: 0
+cpath: /android/branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 15
+dir 2-6.0.r6/71
+K 5
+trunk
+V 14
+dir 4-6.0.r6/0
+END
+ENDREP
+id: 0-6.0.r6/227
+type: dir
+count: 0
+text: 6 146 68 68 106053b474bfe5f584bd8a32b58cc57e
+cpath: /android
+copyroot: 0 /
+
+id: 8-6.0.r6/345
+type: dir
+count: 0
+cpath: /scripts/trunk
+copyroot: 0 /
+
+id: 6-6.0.r6/418
+type: dir
+count: 0
+cpath: /scripts/branches
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 16
+dir 6-6.0.r6/418
+K 5
+trunk
+V 16
+dir 8-6.0.r6/345
+END
+ENDREP
+id: 5-6.0.r6/578
+type: dir
+count: 0
+text: 6 494 71 71 4de75b8578774a332fdf0eefed09281a
+cpath: /scripts
+copyroot: 0 /
+
+PLAIN
+K 7
+android
+V 16
+dir 0-6.0.r6/227
+K 3
+c++
+V 18
+dir 2-3.0.r3/14318
+K 5
+infra
+V 18
+dir 3-3.0.r3/14069
+K 3
+kvm
+V 16
+dir 9-3.0.r4/948
+K 4
+perl
+V 18
+dir u-3.0.r3/14252
+K 7
+scripts
+V 16
+dir 5-6.0.r6/578
+END
+ENDREP
+id: 0.0.r6/910
+type: dir
+pred: 0.0.r5/146
+count: 6
+text: 6 696 201 201 2f2a90acb4d5f2219e3e8479e60476c4
+cpath: /
+copyroot: 0 /
+
+_0.0.t5-5 add-dir false false /android
+
+_4.0.t5-5 add-dir false false /android/trunk
+
+_2.0.t5-5 add-dir false false /android/branches
+
+_5.0.t5-5 add-dir false false /scripts
+
+_8.0.t5-5 add-dir false false /scripts/trunk
+
+_6.0.t5-5 add-dir false false /scripts/branches
+
+
+910 1038

@@ -1,0 +1,76 @@
+2012-01-05  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.7.2
+
+	* Bugfix: SQL scripts cleanup
+
+2011-12-29  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.7.1
+
+	* Feaure: Zone adding / removing support (#12)
+
+2011-12-29  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.7.0
+
+	* Feature: Unicode UI and database, register_globals=off (#16)
+	* Feature: magic_quotes_gpc=off
+	* Feature: Drop "Becenév" field from "Rendszergazdák" (#17)
+	* Feature: Automatic e-mail before computer validity expires (#18)
+	* Many minor bugfixes.
+
+2009-02-26  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.6.4
+
+	* Bugfix: SOASerial calculation
+	* Bugfix: Deleting root on mass delete computer. (#15)
+	* Tuning: Removed "[Sietek]"
+	* Tuning: Including PersonalID in computer datasheet (#14)
+	* Facelift: Opening page prayer
+
+2008-04-01  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.6.3
+
+	* New feature: Denied networks.
+
+2007-08-30  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.6.2
+
+	* New feature: Personal ID ("EHA kód") is a required data from now.
+
+2007-06-09  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.6.1
+
+	* New feature: Reference date can be set for validity filter.
+	* New feature: E-mail sending to search result. Closes #7
+
+2007-05-16  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.6.0
+
+	* New feature: Added system configuration feature
+	* New feature: New (time based) computer validity handling (closes #1)
+	* Facelift: Added favicon.ico :-D
+
+2007-03-19  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.5.0
+
+	* New feature: Added cnames.
+	* Tuning: Showing e-mail address as tooltip in search results.
+	* Facelift: New logo
+	* Refactoring: exploded large files.
+
+2006-11-28  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.4.6
+
+	* DHCPD export: Filtering out IP duplications.
+
+2006-11-15  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.4.5
+
+	* General: HTTP UI requests redirected to HTTPS from now.
+	* Changelog: New look and feel :-)
+
+2006-11-02  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.4.4
+
+	* Root's data: Removed "törzslapszám", added "EHA-kód"
+	* Search: Searching in EHA
+	* Root's export: Added EHA column.
+
+2006-10-20  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.4.3
+
+	* Search: "Invalid regexp causing horror screen" BUG fixed.
+	* Modify/Create computer: Made possible to add two computers with same IP
+		and same name if forced [x]
+
+2006-06-20  Darabos Edvárd Konrád  <nil@hippy.csoma.elte.hu>  1.4.2
+
+	* Search computers: Added option to filter by banning, payment state,
+		access class.
+	* Added changelog. :-)

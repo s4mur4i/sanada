@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/dna/!svn/ver/147/trunk/dbscript/tests
+END
+engine
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/dna/!svn/ver/147/trunk/dbscript/tests/engine
+END
+private
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/dna/!svn/ver/147/trunk/dbscript/tests/private
+END
+secstotimetext.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/dna/!svn/ver/147/trunk/dbscript/tests/secstotimetext.php
+END
+foreach_test.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/dna/!svn/ver/147/trunk/dbscript/tests/foreach_test.php
+END

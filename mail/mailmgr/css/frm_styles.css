@@ -1,0 +1,79 @@
+A.blue:link
+{
+	COLOR: #10629D; TEXT-DECORATION: none;
+}
+A.blue:visited
+{
+	COLOR: #10629D; TEXT-DECORATION: none;
+}
+A.blue:active {
+	COLOR: #10629D; TEXT-DECORATION: none;
+}
+A.blue:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none;
+}
+A.white:link
+{
+	COLOR: #ffffff; TEXT-DECORATION: none;
+}
+A.white:visited
+{
+	COLOR: #ffffff; TEXT-DECORATION: none;
+}
+A.white:active {
+	COLOR: #ffffff; TEXT-DECORATION: none;
+}
+A.white:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none;
+}
+.f18blue
+{
+	FONT-SIZE: 18px; COLOR: #06304E; FONT-FAMILY: Verdana;
+}
+.f13blue
+{
+	FONT-SIZE: 13px; COLOR: #06304E; FONT-FAMILY: Verdana;
+}
+.f12blue
+{
+	FONT-SIZE: 12px; COLOR: #06304E; FONT-FAMILY: Verdana;
+}
+.f11blue
+{
+	FONT-SIZE: 11px; COLOR: #06304E; FONT-FAMILY: Verdana;
+}
+.f10blue
+{
+	FONT-SIZE: 10px; COLOR: #06304E; FONT-FAMILY: Verdana;
+}
+.f13white
+{
+	FONT-SIZE: 13px; COLOR: #ffffff; FONT-FAMILY: Verdana;
+}
+.f10white
+{
+	FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana;
+}
+.f18red
+{
+	FONT-SIZE: 18px; COLOR: #ff0000; FONT-FAMILY: Verdana;
+}
+.f13red
+{
+	FONT-SIZE: 13px; COLOR: #ff0000; FONT-FAMILY: Verdana;
+}
+.f12red
+{
+	FONT-SIZE: 12px; COLOR: #ff0000; FONT-FAMILY: Verdana;
+}
+.f11red
+{
+	FONT-SIZE: 11px; COLOR: #ff0000; FONT-FAMILY: Verdana;
+}
+.f10red
+{
+	FONT-SIZE: 10px; COLOR: #ff0000; FONT-FAMILY: Verdana;
+}
+
+
+

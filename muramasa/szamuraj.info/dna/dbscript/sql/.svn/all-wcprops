@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/dna/!svn/ver/162/trunk/dbscript/sql
+END
+struct.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/dna/!svn/ver/161/trunk/dbscript/sql/struct.sql
+END
+data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/dna/!svn/ver/162/trunk/dbscript/sql/data.sql
+END

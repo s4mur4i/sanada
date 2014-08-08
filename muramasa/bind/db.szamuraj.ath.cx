@@ -1,0 +1,16 @@
+$TTL 7200
+szamuraj.ath.cx.      IN      SOA     ns1.szamuraj.ath.cx. admin.szamuraj.com. (
+                                                        2012051202;
+														 8H;
+														 2H;
+                                                         1D;
+                                                         4H;
+ 														)
+
+szamuraj.ath.cx.      IN      NS              ns1.szamuraj.ath.cx.
+szamuraj.ath.cx.      IN      MX     10       mail.szamuraj.ath.cx.
+				IN 		A		89.134.200.40
+www             IN      A       89.134.200.40
+mail            IN      A       89.134.200.40
+ns1             IN      A       89.134.200.40
+* 				IN		A		89.134.200.40

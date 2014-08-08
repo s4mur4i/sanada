@@ -1,0 +1,91 @@
+<VirtualHost *:80>
+	ServerAdmin s4mur4i@szamuraj.ath.cx
+	ServerName redmine.szamuraj.info
+	ServerAlias redmine.szamuraj.ath.cx
+	DocumentRoot /var/www/redmine/public
+	<Directory />
+		Options -MultiViews
+		AllowOverride all
+	</Directory>
+
+	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+	<Directory "/usr/lib/cgi-bin">
+		AllowOverride None
+		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+		Order allow,deny
+		Allow from all
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+<VirtualHost *:80>
+        ServerAdmin admin@szamuraj.com
+        DocumentRoot /var/www/wiki
+        ServerName wiki.szamuraj.info
+	ServerAlias wiki.szamuraj.ath.cx
+        <Directory />
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                AllowOverride None
+                Order allow,deny
+                allow from all
+        </Directory>
+        <Directory /var/www/wiki/images/>
+                AllowOverride None
+                AddType text/plain .html .htm .shtml .php
+                php_admin_flag engine off
+        </Directory>
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+        ServerAdmin admin@szamuraj.com
+        DocumentRoot /var/www/pier
+        ServerName pier.szamuraj.info
+	ServerAlias pier.szamuraj.ath.cx
+        <Directory />
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                AllowOverride None
+                Order allow,deny
+                allow from all
+        </Directory>
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+        ServerAdmin admin@szamuraj.com
+        DocumentRoot /var/www/itop
+        ServerName itop.szamuraj.info
+	ServerAlias itop.szamuraj.ath.cx
+        <Directory />
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                AllowOverride None
+                Order allow,deny
+                allow from all
+        </Directory>
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+        ServerAdmin admin@szamuraj.com
+        DocumentRoot /var/www/lime
+        ServerName lime.szamuraj.info
+    	ServerAlias lime.szamuraj.ath.cx
+        <Directory />
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                AllowOverride None
+                Order allow,deny
+                allow from all
+        </Directory>
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+

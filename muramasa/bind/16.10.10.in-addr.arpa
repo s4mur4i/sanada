@@ -1,0 +1,36 @@
+;
+; Bind zone file
+; Generator: Domain Name Administrator 1.7.2
+; https://szamuraj.ath.cx:443/dna/download.phtml/domain/reverse/10.10.16
+;
+$TTL 7200
+@ IN SOA muramasa.szamuraj.info. admin.szamuraj.com. (
+                            2012081716 ; Serial
+                            3600 ; Refresh
+                            1000 ; Retry
+                            604800 ; Expire
+                            7200 ) ; Negative Cache TTL
+;
+; Static text from administrator:
+;
+
+@ IN NS muramasa.szamuraj.info.
+
+;
+; Computers:
+;
+
+1	IN PTR	maenza.szamuraj.info. ; C0C1C03CA82E
+2	IN PTR	shogun.szamuraj.info. ; 74EA3ADB2500
+30	IN PTR	ricardo.szamuraj.info. ; D85D4C80973B
+31	IN PTR	test.szamuraj.info. ; acde482103ee
+32	IN PTR	test2.szamuraj.info. ; acde4869ddd3
+33	IN PTR	nagios.szamuraj.info. ; acde48d14939
+34	IN PTR	mail.szamuraj.info. ; acde4800a899
+35	IN PTR	hochenheim.szamuraj.info. ; CCCCCCCCCCCD
+36	IN PTR	muramasa.szamuraj.info. ; D85D4C811589
+38	IN PTR	ldap.szamuraj.info. ; acde4880731c
+39	IN PTR	svn.szamuraj.info. ; acde48822ff6
+40	IN PTR	web.szamuraj.info. ; acde48a1b28e
+41	IN PTR	puppet.szamuraj.info. ; acde4828368b
+9	IN PTR	popcorn.szamuraj.info. ; 0006DC422F2B

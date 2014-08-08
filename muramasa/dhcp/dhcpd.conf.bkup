@@ -1,0 +1,59 @@
+ddns-update-style none;
+option domain-name "szamuraj.info";
+option domain-name-servers 10.10.16.36;
+option routers 10.10.16.1;
+#option ntp-servers ntp.szamuraj.info;
+default-lease-time 86400;
+max-lease-time 86400;
+authoritative;
+log-facility local7;
+class "kvm" {
+            match if binary-to-ascii(16,8,":",substring(hardware, 0, 4)) = "1:ac:de:48";
+}
+subnet 10.10.16.0 netmask 255.255.255.0 {
+	        pool {
+		          	range 10.10.16.5 10.10.16.29;
+		        	allow unknown-clients;
+				    deny members of "kvm";
+#			log (info, (binary-to-ascii(16,8,":",substring(hardware, 0, 4))));
+				 }
+#host hostname  {
+#      hardware ethernet xxxx;
+#      fixed-address xxxxx;
+#}
+host nagios {
+	hardware ethernet ac:de:48:d1:49:39;
+	fixed-address 10.10.16.33;
+	option host-name nagios;
+}
+host mail {
+	hardware ethernet ac:de:48:00:a8:99;
+	fixed-address 10.10.16.34;
+	option host-name mail;
+}
+host ldap {
+	hardware ethernet ac:de:48:80:73:1c;
+	fixed-address 10.10.16.38;
+	option host-name ldap;
+}
+host svn {
+	hardware ethernet ac:de:48:82:2f:f6;
+	fixed-address 10.10.16.39;
+	option host-name svn;
+}
+host web {
+	hardware ethernet ac:de:48:a1:b2:8e;
+	fixed-address 10.10.16.40;
+	option host-name web;
+}
+host puppet {
+	hardware ethernet ac:de:48:28:36:8b;
+	fixed-address 10.10.16.41;
+	option host-name puppet;
+}
+host test {
+	hardware ethernet ac:de:48:21:03:ee;
+	fixed-address 10.10.16.31;
+	option host-name test;
+}
+}

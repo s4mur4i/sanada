@@ -1,0 +1,82 @@
+#!/bin/bash
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+
+PROGNAME=`basename $0`
+PROGPATH=`echo $0 | sed -e 's,[\\/][^\\/][^\\/]*$,,'`
+REVISION="1.0.1"
+
+. $PROGPATH/utils.sh
+
+DOVECOT="/etc/init.d/dovecot"
+EXIT_UNK="-1"
+EXIT_CRI="2"
+EXIT_OK="0"
+NAGIOS_USER="nagios"
+
+print_usage() {
+	echo "Usage: $PROGNAME"
+	echo ""
+	echo "Check utils.sh path and "dovecot init script" path before use this script"
+	echo "Dovecot init.d require root permission"
+	echo "add nagios to sudo users: something like this"
+	echo ""
+	echo "visudo"
+	echo "Defaults:nagios !requiretty"
+	echo "nagios ALL = NOPASSWD: /etc/init.d/dovecot status"
+}
+
+print_revision() {
+        echo "$PROGNAME"
+        echo "Nagios plugin checks dovecot status using init script"
+        echo "Version: $REVISION"
+        echo "Egidio Garbin - http://www.gnu.org/licenses/gpl-2.0.txt"
+		echo "For any information send me an email to egidio@codiceasbarre.net"
+}
+
+print_help() {
+        echo ""
+        print_usage
+        echo ""
+        print_revision
+        echo ""
+        support
+        exit 0
+}
+
+case "$1" in
+        --help)
+                print_help
+                exit 0
+                ;;
+        -h)
+                print_help
+                exit 0
+                ;;
+        --version)
+                print_revision
+                exit 0
+                ;;
+        -v)
+                print_revision
+                exit 0
+                ;;
+        *)
+
+                if [ ! -f "$DOVECOT" ]; then
+                        echo "$DOVECOT UNKNOWN - Command not found"
+                        exit $EXIT_UNK
+                fi
+#                su - "$NAGIOS_USER" -c "sudo $DOVECOT status > /dev/null 2>&1"
+                sudo $DOVECOT status > /dev/null 2>&1
+				RET=$?
+                if [ $RET -eq 0 ] ; then
+                        echo "OK | Dovecot is running"
+                        exit $EXIT_OK
+                else
+                        echo "CRITICAL | Dovecot is stopped"
+                        exit $EXIT_CRI
+                fi
+                ;;
+esac
+

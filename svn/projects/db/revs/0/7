@@ -1,0 +1,89 @@
+PLAIN
+K 14
+svn:executable
+V 1
+*
+END
+ENDREP
+id: 7-3.0.r7/43
+type: file
+pred: 7-3.0.r3/13531
+count: 1
+text: 3 8434 350 605 e8074fbf535dd799952452df436194d2 ae244602b7f0975c150baf1081327245b9d5c486 2-2/_13
+props: 7 0 30 0 4160c74de5f4e580dc15660c798ff9fc
+cpath: /infra/trunk/ntp_sync.sh
+copyroot: 0 /
+
+PLAIN
+K 11
+ntp_sync.sh
+V 16
+file 7-3.0.r7/43
+END
+ENDREP
+id: 6-3.0.r7/355
+type: dir
+pred: 6-3.0.r3/13779
+count: 1
+text: 7 299 43 43 0b6d7449045b9bcd36225b995f664dcc
+cpath: /infra/trunk
+copyroot: 0 /
+
+PLAIN
+K 8
+branches
+V 18
+dir 4-3.0.r3/13905
+K 5
+trunk
+V 16
+dir 6-3.0.r7/355
+END
+ENDREP
+id: 3-3.0.r7/584
+type: dir
+pred: 3-3.0.r3/14069
+count: 1
+text: 7 498 73 73 53e7f118cb1f67254b10d7643a31f2d2
+cpath: /infra
+copyroot: 0 /
+
+PLAIN
+K 7
+android
+V 16
+dir 0-6.0.r6/227
+K 3
+c++
+V 18
+dir 2-3.0.r3/14318
+K 5
+infra
+V 16
+dir 3-3.0.r7/584
+K 3
+kvm
+V 16
+dir 9-3.0.r4/948
+K 4
+perl
+V 18
+dir u-3.0.r3/14252
+K 7
+scripts
+V 16
+dir 5-6.0.r6/578
+END
+ENDREP
+id: 0.0.r7/933
+type: dir
+pred: 0.0.r6/910
+count: 7
+text: 7 721 199 199 bb1425ef010873229ca8228eb771793d
+cpath: /
+copyroot: 0 /
+
+7-3.0.t6-6 modify-file false true /infra/trunk/ntp_sync.sh
+
+
+933 1061

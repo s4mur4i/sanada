@@ -1,0 +1,13 @@
+K 10
+svn:author
+V 4
+root
+K 8
+svn:date
+V 27
+2012-08-13T19:22:56.919436Z
+K 7
+svn:log
+V 40
+Added bind_update.sh, kvm.script.sync.sh
+END

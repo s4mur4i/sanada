@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/projects/!svn/ver/4/kvm/trunk
+END
+removeguest.pl
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/projects/!svn/ver/3/kvm/trunk/removeguest.pl
+END
+creategust.pl
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/projects/!svn/ver/4/kvm/trunk/creategust.pl
+END
+host_info.pl
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/projects/!svn/ver/3/kvm/trunk/host_info.pl
+END
+dhcp_info.pl
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/projects/!svn/ver/3/kvm/trunk/dhcp_info.pl
+END
+Changelog
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/projects/!svn/ver/3/kvm/trunk/Changelog
+END
+update_mirrors.sh
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/projects/!svn/ver/3/kvm/trunk/update_mirrors.sh
+END
+mac.sh
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/projects/!svn/ver/3/kvm/trunk/mac.sh
+END
+resize.sh
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/projects/!svn/ver/3/kvm/trunk/resize.sh
+END

@@ -1,0 +1,86 @@
+10
+
+dir
+163
+http://localhost/svn/dna/trunk/dbscript
+http://localhost/svn/dna
+
+
+
+2012-01-05T09:47:46.586133Z
+162
+nil
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22b24b77-2823-0410-9d5f-f51a95ae4956
+
+sql
+dir
+
+cron
+dir
+
+tests
+dir
+
+upgrade-1.5.0-1.6.0
+dir
+
+upgrade-1.4.6-1.5.0
+dir
+
+.htaccess
+file
+
+
+
+
+2012-01-05T09:50:45.000000Z
+0a44f95d541d9a8a8c9e7c144133bf0d
+2006-11-26T16:21:51.618367Z
+1
+nil
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+56
+
+upgrade-1.6.2-1.6.3
+dir
+
+upgrade-1.6.4-1.7.0
+dir
+
+upgrade-1.7.1-1.7.2
+dir
+

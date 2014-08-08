@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/dna/!svn/ver/163/trunk/engine
+END
+computers_common.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/dna/!svn/ver/143/trunk/engine/computers_common.php
+END
+db_config.php.skeleton
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/dna/!svn/ver/12/trunk/engine/db_config.php.skeleton
+END
+users.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/dna/!svn/ver/134/trunk/engine/users.php
+END
+domains_common.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/dna/!svn/ver/154/trunk/engine/domains_common.php
+END
+domains_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/dna/!svn/ver/154/trunk/engine/domains_admin.php
+END
+config.macro.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/dna/!svn/ver/163/trunk/engine/config.macro.php
+END
+sessions.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/dna/!svn/ver/138/trunk/engine/sessions.php
+END
+download.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/dna/!svn/ver/80/trunk/engine/download.php
+END
+submitdata_computer.macro.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/dna/!svn/ver/33/trunk/engine/submitdata_computer.macro.php
+END
+computers_export.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/dna/!svn/ver/143/trunk/engine/computers_export.php
+END
+setvars_user.macro.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/dna/!svn/ver/134/trunk/engine/setvars_user.macro.php
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/dna/!svn/ver/3/trunk/engine/.htaccess
+END
+dblog.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/dna/!svn/ver/147/trunk/engine/dblog.php
+END
+computers_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/dna/!svn/ver/152/trunk/engine/computers_admin.php
+END
+deniednets_common.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/dna/!svn/ver/134/trunk/engine/deniednets_common.php
+END
+deniednets_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/dna/!svn/ver/134/trunk/engine/deniednets_admin.php
+END
+domains_export.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/dna/!svn/ver/103/trunk/engine/domains_export.php
+END
+submitdata_user.macro.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/dna/!svn/ver/67/trunk/engine/submitdata_user.macro.php
+END
+footer.macro.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/dna/!svn/ver/134/trunk/engine/footer.macro.php
+END
+utils.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/dna/!svn/ver/160/trunk/engine/utils.php
+END
+banemail_template.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/dna/!svn/ver/134/trunk/engine/banemail_template.php
+END
+checkdata_user.macro.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/dna/!svn/ver/134/trunk/engine/checkdata_user.macro.php
+END
+dhcpds_export.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/dna/!svn/ver/103/trunk/engine/dhcpds_export.php
+END
+computers_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/dna/!svn/ver/143/trunk/engine/computers_search.php
+END
+base.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/dna/!svn/ver/160/trunk/engine/base.php
+END
+db_mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/dna/!svn/ver/153/trunk/engine/db_mysql.php
+END
+warnemail_template.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/dna/!svn/ver/152/trunk/engine/warnemail_template.php
+END
+dhcpds_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/dna/!svn/ver/103/trunk/engine/dhcpds_admin.php
+END
+roots_common.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/dna/!svn/ver/103/trunk/engine/roots_common.php
+END
+roots_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/dna/!svn/ver/143/trunk/engine/roots_admin.php
+END
+cnames_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/dna/!svn/ver/103/trunk/engine/cnames_admin.php
+END
+cnames_common.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/dna/!svn/ver/133/trunk/engine/cnames_common.php
+END
+limitemail_template.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/dna/!svn/ver/125/trunk/engine/limitemail_template.php
+END
+session.macro.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/dna/!svn/ver/135/trunk/engine/session.macro.php
+END
+db.php
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/dna/!svn/ver/153/trunk/engine/db.php
+END
+header.macro.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/dna/!svn/ver/134/trunk/engine/header.macro.php
+END

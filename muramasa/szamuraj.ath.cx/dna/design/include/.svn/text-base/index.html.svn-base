@@ -1,0 +1,64 @@
+<TABLE border=0><TR><TD align='left'>
+<H2>Általános leírás</H2>
+<H3>Adatbázis:</H3>
+<UL>
+<LI>Normál zónák</LI>
+<LI>Fordított zónák</LI>
+<LI>Számítógépek</LI>
+<LI>Rendszergazdák</LI>
+<LI>DHCP démonok (egyenlőre beégetve)</LI>
+</UL>
+<H3>Exportok: 157.181.100.0/22</H3>
+<UL>
+<LI><A href='https://<?=getenv("SERVER_NAME")?>/dna/download.phtml/domain/normal/csoma.elte.hu'>Normál bind zónafájl</A></LI>
+<LI>Fordított bind zónafájl:
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/domain/reverse/157.181.100'>157.181.100</A>,
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/domain/reverse/157.181.101'>157.181.101</A>,
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/domain/reverse/157.181.102'>157.181.102</A>,
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/domain/reverse/157.181.103'>157.181.103</A>
+</LI>
+<LI>IPTables IP-ARP szűrő:
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/iptables/157.181.100.0/22/IPARP100'> 100</A>,
+</LI>
+<LI>DHCPD konfig:
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/dhcpd/157.181.100.0/22'>100, 101, 102, 103</A>
+</LI>
+</UL>
+
+<H3>Exportok: 157.181.192.0/21</H3>
+<UL>
+<LI><A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/domain/normal/csoma.elte.hu'>Normál bind zónafájl</A></LI>
+<LI>Fordított bind zónafájl:
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/domain/reverse/157.181.192'>157.181.192</A>
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/domain/reverse/157.181.193'>157.181.193</A>
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/domain/reverse/157.181.194'>157.181.194</A>
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/domain/reverse/157.181.195'>157.181.195</A>
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/domain/reverse/157.181.196'>157.181.196</A>
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/domain/reverse/157.181.197'>157.181.197</A>
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/domain/reverse/157.181.198'>157.181.198</A>
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/domain/reverse/157.181.199'>157.181.199</A>
+</LI>
+<LI>DHCPD konfig:
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/dhcpd/157.181.192.0/21'>192 .. 199</A>
+</LI>
+</UL>
+
+<H3>Közös exportok</H3>
+<UL>
+<LI><A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/staticarp/157.181.0.0/16'>IP-ARP tabtext</A>,
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/staticarpac/157.181.0.0/16'>IP-ARP-AC tabtext</A></LI>
+<LI><A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/roots/normal/csoma.elte.hu'>Rendszergazda lista (tabtext)</A></LI>
+<LI>Tiltott hálózatok:
+	<A href='https://<?=getenv("SERVER_NAME").":".getenv("SERVER_PORT")?>/dna/download.phtml/deniednets'>Lista</A>
+</LI>
+</UL>
+
+
+<H3>Készítők:</H3>
+<UL>
+<LI>Darabos Edvárd Konrád (nil, 2003-) Support: nil@hippy.csoma.elte.hu</LI>
+<LI>Kancsal Zoltán (turdus, 2003-2005)</LI>
+</UL>
+<FONT size='-1'>A program elkészítéséhez csak szabad szoftvereket használtunk.</FONT><BR>
+<FONT size='-1'>A program elkészítése során egyetlen pixel sem sérült meg.</FONT><BR>
+</TD></TR></TABLE>

@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Verifica a consistencia do IP externo junto ao DNS dinâco
+# Usage: check_curr_ip domain dnsserver
+# Luiz A. Amelotti <amelotti@gmail.com>
+# Versao 0.1 - 13/08/2010
+
+SAIDA="UNKNOWN"
+ADDRESS=szamuraj.ath.cx
+CURRENTIP=`wget -q -O - http://ip.keithscode.com`
+DNSIP=`nslookup szamuraj.ath.cx muramasa |awk -F\: '/Address:/ { print $2 }'|sed -e 's/ //g' -e "/.*#53/ d"`
+
+#echo "Endereco consultado: " $ADDRESS;
+#echo "Servidor DNS consultado: " $DNSSERVER;
+#echo "IP externo da placa de rede: " $CURRENTIP;
+#echo "IP retornado na consulta ao DNS: " $DNSIP;
+
+if [ "$CURRENTIP" = "$DNSIP" ]
+then 
+  SAIDA="IP address is same"
+  rc=0
+else 
+  SAIDA="IP is different"
+  rc=2
+fi
+
+case $rc in
+	0)
+	    SAIDA="OK - $SAIDA"
+#	    SAIDA="OK"
+	    ;;
+	2)
+	    SAIDA="CRITICAL - $SAIDA"
+#	    SAIDA="CRITICAL"
+	    ;;
+	*)
+	    SAIDA="INTERNAL ERROR: Status code not properly set!"
+	    rc=3
+	    ;;
+    esac
+
+    echo "$SAIDA"
+    exit $rc
+

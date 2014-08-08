@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use DBI;
+my $dbh = DBI->connect('dbi:mysql:dbmydnsconfig','root','Beta8537',{ RaiseError => 1, AutoCommit => 0 }) or die "Connection Error: $DBI::errstr\n";
+my $sql = 'select name,data,mac from dns_rr WHERE mac IS NOT NULL';
+my $sth = $dbh->prepare($sql);
+$sth->execute or die "SQL Error: $DBI::errstr\n";
+while ( my @row = $sth->fetchrow_array) {
+	print "@row\n";
+} 
+$dbh->disconnect();

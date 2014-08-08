@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/dna/!svn/ver/152/trunk/dbscript/upgrade-1.6.4-1.7.0
+END
+1_update.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/dna/!svn/ver/152/trunk/dbscript/upgrade-1.6.4-1.7.0/1_update.sql
+END
+2_alter_database.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/dna/!svn/ver/147/trunk/dbscript/upgrade-1.6.4-1.7.0/2_alter_database.php
+END
+4_update.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/dna/!svn/ver/147/trunk/dbscript/upgrade-1.6.4-1.7.0/4_update.sql
+END
+engine
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/dna/!svn/ver/134/trunk/dbscript/upgrade-1.6.4-1.7.0/engine
+END
+3_upgrade_data.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/dna/!svn/ver/147/trunk/dbscript/upgrade-1.6.4-1.7.0/3_upgrade_data.php
+END
+private
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/dna/!svn/ver/134/trunk/dbscript/upgrade-1.6.4-1.7.0/private
+END

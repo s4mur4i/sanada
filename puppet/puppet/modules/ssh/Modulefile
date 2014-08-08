@@ -1,0 +1,4 @@
+name 'ssh management'
+version '1.0'
+description "SSH management."
+author 'Krisztian Banhidy'

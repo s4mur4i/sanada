@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<domainlist>
+  <domain type="kvm">
+    <host>
+      <name>debian</name>
+      <type arch="x86_64" machine="pc-0.12">hvm</type>
+      <boot dev="hd"/>
+    </host>
+    <host>
+      <name>ubuntu</name>
+      <type arch="x86_64" machine="pc-0.12">hvm</type>
+      <boot dev="fd"/>
+    </host>
+  </domain>
+  <domain type="qemu">
+    <host>
+      <name>suse</name>
+      <type arch="x86_64" machine="pc-0.12">hvm</type>
+      <boot dev="hd"/>
+    </host>
+    <host>
+      <name>redhat</name>
+      <type arch="x86_64" machine="pc-0.12">hvm</type>
+      <boot dev="fd"/>
+    </host>
+  </domain>
+</domainlist>
